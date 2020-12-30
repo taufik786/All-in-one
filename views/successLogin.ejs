@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/common/header.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome to SAVAARI</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="ul">
+            <li class="sawari-left-padding"><a href="#">SAVAARI</a></li>
+            <div class="user-auth">
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="bg-img">
+        <div class="overlay">
+            <div class="container">
+                <h1>Welcome <%= user.name %></h1>
+                <h3>Book a city taxi to your destination in town</h3>
+                <div class="card mt-5" style="width: 400px">
+                    <h2><a href="#">City Taxi</a></h2>
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter Current Location" />
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter Destination Location" />
+                        </div>
+                        <div class="input-group mb-3">
+                            <select id="choseDate" class="mb-3">
+                                <option value="Today" selected>Today</option>
+                                <option value="Tm">Schedule for later</option>
+                            </select>
+
+                            <div class="toggle-with ">
+                                <select name="Schedule" class="sh-width">
+                                    <option value="Tomorrow">Tomorrom</option>
+                                    <option value="Tomorrow">next</option>
+                                    <option value="Tomorrow">next</option>
+                                </select>
+                                <select name="Schedule" class="sh-width">
+                                    <option value="Time">10.30</option>
+                                    <option value="Time">10.30</option>
+                                    <option value="Time">10.30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Search!!</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

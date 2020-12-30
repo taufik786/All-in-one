@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-nav{
+    background-color: black;
+}
+.main-nav ul{
+    display: flex;
+    margin-bottom: 0;
+
+}
+.main-nav ul li{
+    list-style: none;
+}
+.main-nav ul li a{
+    color: white;
+    text-decoration: none;
+    /* padding: 5px 15px; */
+    /* border: 2px solid black; */
+}
+.main-nav ul li a:hover{
+    background-color: gainsboro;
+    color: black;
+}
+.sawari-left-padding{
+    padding-left: 45px;
+}
+li.sawari-left-padding>a{
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: bold;
+    padding: 5px 5px;
+    display: block;
+}
+.user-auth{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    /* top: 5px; */
+    right: 100px;
+}
+.user-auth>li>a{
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}

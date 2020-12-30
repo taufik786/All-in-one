@@ -1,0 +1,49 @@
+<%- include('../static/common/header') -%>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/login.css">
+    </head>
+
+    <body>
+
+        <div class="bg-white">
+            <article class="card-body mx-auto">
+                <form action="/login" method="POST">
+                    <h4 class="card-title mt-3 text-center">Login</h4>
+                    <% if (success_message != '') {%>
+                    <div class="alert alert-dismissible alert-success">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong><%= success_message %></strong>
+                      </div>
+                      <% } %>
+                      <% if(error !='' ) {%>
+                        <div class="alert alert-dismissible alert-danger">
+                            <button type="submit" class="close" data-dismiss="alert">&times;</button>
+                            <strong>
+                                <%= error %>
+                            </strong>
+                        </div>
+                        <% } %>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input name="email" class="form-control" placeholder="Enter Your Email" type="email">
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input name="password" class="form-control" placeholder="Enter Your password" type="password">
+                    </div>
+                    <div class="form-group">
+                        <p class="text-center">Forget Password?<a href="forgetpassword"> Click Here</a> </p>
+                        <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                    </div> <!-- form-group// -->
+                    <p class="text-center">Don't Have an account? <a href="/register">Register Here</a> </p>
+        
+                </form>
+            </article>
+        </div>
+    </body>
+    </html>
